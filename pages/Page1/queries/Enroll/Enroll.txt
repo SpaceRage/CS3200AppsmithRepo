@@ -1,0 +1,7 @@
+{{
+	"course_id":
+	"section_id":
+	"price": {{Table1.selectedRow[]}}
+	"semester":
+	"year":
+}}
