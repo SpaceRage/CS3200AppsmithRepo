@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 850,
+          "bottomRow": 630,
           "containerStyle": "none",
           "snapRows": 62,
           "parentRowSpace": 1,
@@ -30,248 +30,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 13,
-              "isSortable": true,
-              "type": "TABLE_WIDGET_V2",
-              "inlineEditingSaveOption": "ROW_LEVEL",
-              "animateLoading": true,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.Email.computedValue"
-                },
-                {
-                  "key": "primaryColumns.First_Name.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Last_Name.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Student_ID.computedValue"
-                }
-              ],
-              "needsHeightForContent": true,
-              "leftColumn": 36,
-              "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
-              "isVisible": true,
-              "enableClientSideSearch": true,
-              "version": 1,
-              "totalRecordsCount": 0,
-              "isLoading": false,
-              "childStylesheet": {
-                "button": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "menuButton": {
-                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "iconButton": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "editActions": {
-                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                }
-              },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681873578420,
-              "defaultSelectedRowIndices": [
-                0
-              ],
-              "widgetName": "AllStudents",
-              "defaultPageSize": 0,
-              "columnOrder": [
-                "Student_ID",
-                "First_Name",
-                "Last_Name",
-                "Email"
-              ],
-              "dynamicPropertyPathList": [
-                {
-                  "key": "tableData"
-                }
-              ],
-              "displayName": "Table",
-              "bottomRow": 85,
-              "columnWidthMap": {
-                "task": 245,
-                "step": 70,
-                "status": 85
-              },
-              "parentRowSpace": 10,
-              "hideCard": false,
-              "parentColumnSpace": 13.6875,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onRowSelected"
-                }
-              ],
-              "borderWidth": "1",
-              "primaryColumns": {
-                "Email": {
-                  "allowCellWrapping": false,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "Email",
-                  "id": "Email",
-                  "alias": "Email",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Email",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{AllStudents.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Email\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "First_Name": {
-                  "allowCellWrapping": false,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "First Name",
-                  "id": "First_Name",
-                  "alias": "First Name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "First Name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{AllStudents.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"First Name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Last_Name": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "Last Name",
-                  "id": "Last_Name",
-                  "alias": "Last Name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Last Name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{AllStudents.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Last Name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Student_ID": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "Student ID",
-                  "id": "Student_ID",
-                  "alias": "Student ID",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Student ID",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{AllStudents.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Student ID\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                }
-              },
-              "onRowSelected": "{{Enrollments.run()}}",
-              "key": "qwmw9do7ff",
-              "canFreezeColumn": true,
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "textSize": "0.875rem",
-              "widgetId": "rgy0l287wq",
-              "minWidth": 450,
-              "tableData": "{{Students.data}}",
-              "label": "Data",
-              "searchKey": "",
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "responsiveBehavior": "fill",
-              "isVisiblePagination": true,
-              "verticalAlignment": "CENTER"
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
-              "isVisibleDownload": true,
-              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 14,
+              "topRow": 35,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -305,7 +64,7 @@
               "needsHeightForContent": true,
               "leftColumn": 2,
               "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
+              "defaultSelectedRowIndex": "",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "isVisible": true,
@@ -338,7 +97,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681924802478,
-              "originalBottomRow": 42,
+              "originalBottomRow": 41,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -352,7 +111,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 42,
+              "bottomRow": 63,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -496,7 +255,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 14,
+              "originalTopRow": 13,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -564,7 +323,7 @@
                 "label"
               ],
               "topRow": 2,
-              "bottomRow": 7,
+              "bottomRow": 28,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -590,7 +349,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "{{AllStudents.selectedRow[\"First Name\"]}}",
+              "text": "{{Student_By_ID.data}}",
               "key": "1aa54nq8zd",
               "isDeprecated": false,
               "rightColumn": 24,
@@ -609,8 +368,72 @@
               "originalTopRow": 2,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 7,
-              "fontSize": "1.875rem",
+              "originalBottomRow": 6,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Input1",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "onSubmit": "{{Enrollments.run(() => Student_By_ID.run(), () => {})}}",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 14,
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 13.6875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "resetOnSubmit": true,
+              "leftColumn": 40,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Top",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "j48mvuzsj3",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 60,
+              "dynamicHeight": "FIXED",
+              "widgetId": "be2ybvo00x",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "minWidth": 450,
+              "isVisible": true,
+              "label": "Please Enter Your Student ID Below",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "iconAlign": "left",
+              "defaultText": "",
               "minDynamicHeight": 4
             }
           ]
@@ -623,16 +446,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "AllStudents.selectedRow[\"Student ID\"]"
+                "Input1.text"
               ],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Page2_Students",
-              "name": "Students",
+              "id": "Page2_Student_By_ID",
+              "name": "Student_By_ID",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "Input1.text"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
