@@ -1,0 +1,8 @@
+{
+	"InPerson": {{UpdateInPerson.text}},
+	"City": {{UpdateCity.text}},
+	"State": {{UpdateState.text}},
+	"Zipcode": {{UpdateZipcode.text}},
+	"Price": {{UpdatePrice.text}},
+	"Capacity": {{UpdateCapacity.text}},
+}
