@@ -1279,7 +1279,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Section: {{CourseReviews.data[currentIndex][\"Section ID\"]}}",
+                              "text": "Section: {{Table1.selectedRow[\"Section\"]}}",
                               "key": "i7b3fop52n",
                               "isDeprecated": false,
                               "rightColumn": 14,
@@ -1449,8 +1449,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "Table1.selectedRow[\"Section\"]",
-                "List1.selectedItem[\"ID\"]"
+                "List1.selectedItem[\"ID\"]",
+                "Table1.selectedRow[\"Section\"]"
               ],
               "timeoutInMillisecond": 10000
             },

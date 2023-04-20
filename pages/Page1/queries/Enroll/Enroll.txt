@@ -1,7 +1,7 @@
-{{
-	"course_id":
-	"section_id":
-	"price": {{Table1.selectedRow[]}}
-	"semester":
-	"year":
-}}
+[{
+	"course_id": {{List1.selectedItem["ID"]}},
+	"section_id": {{Table1.selectedRow["Section"]}},
+	"price": {{Table1.selectedRow["Price"]}},
+	"semester": "Fall",
+	"year": "2023"
+}]
