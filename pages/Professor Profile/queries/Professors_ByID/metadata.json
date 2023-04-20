@@ -8,7 +8,7 @@
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
         "sshProxyEnabled": false,
-        "url": "web:4000/p/professors/{{Enter_Professor_ID.text}}"
+        "url": "web:4000/p/professors/{{appsmith.store.ProfessorID}}"
       },
       "invalids": [],
       "messages": [],
@@ -51,7 +51,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Enter_Professor_ID.text"
+      "appsmith.store.ProfessorID"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
