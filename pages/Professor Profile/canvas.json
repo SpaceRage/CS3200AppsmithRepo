@@ -30,7 +30,7 @@
               "widgetName": "Input1",
               "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "onSubmit": "",
+              "onSubmit": "{{Professors_ByID.run()}}",
               "searchTags": [
                 "form",
                 "text input",
@@ -49,6 +49,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "onSubmit"
+                },
+                {
+                  "key": "onTextChanged"
                 }
               ],
               "resetOnSubmit": true,
@@ -68,6 +71,7 @@
               "key": "nqxxnlknvc",
               "labelTextSize": "0.875rem",
               "isRequired": false,
+              "onTextChanged": "{{Professors_ByID.run()}}",
               "isDeprecated": false,
               "rightColumn": 62,
               "dynamicHeight": "FIXED",
@@ -99,7 +103,7 @@
                 "label"
               ],
               "topRow": 5,
-              "bottomRow": 9,
+              "bottomRow": 10,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -125,7 +129,7 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Welcome, {{Input1.}}",
+              "text": "Welcome, {{Professors_ByID.data[0][\"First Name\"]}} {{Professors_ByID.data[0][\"Last Name\"]}} ",
               "key": "qlc1q6gd2a",
               "isDeprecated": false,
               "rightColumn": 18,
@@ -150,7 +154,20 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Professor Profile_Professors_ByID",
+              "name": "Professors_ByID",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "Input1.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Professor Profile",

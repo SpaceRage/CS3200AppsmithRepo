@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Student_By_ID",
+    "name": "Professors_ByID",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "web:4000/s/students/{{Input1.text}}"
+        "url": "web:4000/p/professors/{{Input1.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -17,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page2",
+    "pageId": "Professor Profile",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,6 +40,9 @@
     "dynamicBindingPathList": [
       {
         "key": "datasourceUrl"
+      },
+      {
+        "key": "datasource.datasourceConfiguration.url"
       }
     ],
     "isValid": true,
@@ -54,7 +56,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page2_Student_By_ID",
+  "id": "Professor Profile_Professors_ByID",
   "deleted": false,
-  "gitSyncId": "643f21369aa6600758896121_64402aab8cd0f015cc0c9421"
+  "gitSyncId": "6440a3c0af6dfb389f95b05c_6440a9ee2f9f832e00531d86"
 }
