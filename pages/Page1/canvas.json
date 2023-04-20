@@ -1449,8 +1449,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "Table1.selectedRow[\"Section\"]",
-                "List1.selectedItem[\"ID\"]"
+                "List1.selectedItem[\"ID\"]",
+                "Table1.selectedRow[\"Section\"]"
               ],
               "timeoutInMillisecond": 10000
             },
