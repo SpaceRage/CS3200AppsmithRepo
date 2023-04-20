@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 630,
+          "bottomRow": 610,
           "containerStyle": "none",
           "snapRows": 62,
           "parentRowSpace": 1,
@@ -30,7 +30,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 15,
+              "topRow": 13,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -107,7 +107,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 43,
+              "bottomRow": 41,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -236,7 +236,7 @@
                 "label"
               ],
               "topRow": 2,
-              "bottomRow": 7,
+              "bottomRow": 6,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -294,8 +294,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 7,
-              "bottomRow": 12,
+              "topRow": 6,
+              "bottomRow": 10,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -346,24 +346,53 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "Input1",
-              "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "{{Enrollments.run(() => Student_By_ID.run(), () => {})}}",
+              "topRow": 14,
+              "labelWidth": 5,
+              "type": "INPUT_WIDGET_V2",
+              "animateLoading": true,
+              "resetOnSubmit": true,
+              "leftColumn": 40,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelStyle": "",
+              "inputType": "NUMBER",
+              "isDisabled": false,
+              "isRequired": false,
+              "dynamicHeight": "FIXED",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "isVisible": true,
+              "version": 2,
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "widgetName": "Input1",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onTextChanged"
+                }
+              ],
+              "displayName": "Input",
               "searchTags": [
                 "form",
                 "text input",
                 "number",
                 "textarea"
               ],
-              "topRow": 14,
               "bottomRow": 21,
               "parentRowSpace": 10,
-              "labelWidth": 5,
               "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
               "hideCard": false,
-              "animateLoading": true,
               "parentColumnSpace": 13.6875,
               "dynamicTriggerPathList": [
                 {
@@ -373,43 +402,22 @@
                   "key": "onTextChanged"
                 }
               ],
-              "resetOnSubmit": true,
-              "leftColumn": 40,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
               "labelPosition": "Top",
-              "labelStyle": "",
-              "inputType": "NUMBER",
-              "isDisabled": false,
               "key": "j48mvuzsj3",
               "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "onTextChanged": "{{Student_By_ID.run(() => Enrollments.run(), () => {})}}",
+              "onTextChanged": "{{storeValue('StudentID',Input1.text);\nStudent_By_ID.run(); Enrollments.run();\n}}",
               "isDeprecated": false,
               "rightColumn": 60,
-              "dynamicHeight": "FIXED",
               "widgetId": "be2ybvo00x",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
               "minWidth": 450,
-              "isVisible": true,
               "label": "Please Enter Your Student ID Below",
-              "version": 2,
               "parentId": "0",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "isLoading": false,
               "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "1",
+              "defaultText": "{{appsmith.store.StudentID.toString()}}",
               "minDynamicHeight": 4
             },
             {
@@ -537,8 +545,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 49,
-              "bottomRow": 56,
+              "topRow": 47,
+              "bottomRow": 54,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -601,8 +609,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 56,
-              "bottomRow": 63,
+              "topRow": 54,
+              "bottomRow": 61,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -665,8 +673,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 49,
-              "bottomRow": 56,
+              "topRow": 47,
+              "bottomRow": 54,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
@@ -729,8 +737,8 @@
                 "number",
                 "textarea"
               ],
-              "topRow": 56,
-              "bottomRow": 63,
+              "topRow": 54,
+              "bottomRow": 61,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "autoFocus": false,
