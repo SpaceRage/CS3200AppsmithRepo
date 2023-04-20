@@ -71,11 +71,7 @@
               "key": "nqxxnlknvc",
               "labelTextSize": "0.875rem",
               "isRequired": false,
-
-
-
               "onTextChanged": "{{storeValue('ProfessorID',Enter_Professor_ID.text)}}",
-
               "isDeprecated": false,
               "rightColumn": 59,
               "dynamicHeight": "FIXED",
