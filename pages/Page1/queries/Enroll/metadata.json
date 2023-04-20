@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n\t\"course_id\":\n\t\"section_id\":\n\t\"price\": {{Table1.selectedRow[]}}\n\t\"semester\":\n\t\"year\":\n}}",
+      "body": "[{\n\t\"course_id\": {{List1.selectedItem[\"ID\"]}},\n\t\"section_id\": {{Table1.selectedRow[\"Section\"]}},\n\t\"price\": {{Table1.selectedRow[\"Price\"]}},\n\t\"semester\": \"Fall\",\n\t\"year\": \"2023\"\n}]",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -52,7 +52,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "\n\t\"course_id\":\n\t\"section_id\":\n\t\"price\": {{Table1.selectedRow[]}}\n\t\"semester\":\n\t\"year\":\n"
+      "List1.selectedItem[\"ID\"]",
+      "Table1.selectedRow[\"Price\"]",
+      "Table1.selectedRow[\"Section\"]"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

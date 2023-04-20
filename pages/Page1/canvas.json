@@ -1279,7 +1279,7 @@
                               ],
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "text": "Section: {{CourseReviews.data[currentIndex][\"Section ID\"]}}",
+                              "text": "Section: {{Table1.selectedRow[\"Section\"]}}",
                               "key": "i7b3fop52n",
                               "isDeprecated": false,
                               "rightColumn": 14,

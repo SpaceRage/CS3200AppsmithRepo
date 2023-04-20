@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 630,
+          "bottomRow": 410,
           "containerStyle": "none",
           "snapRows": 62,
           "parentRowSpace": 1,
@@ -30,7 +30,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 35,
+              "topRow": 13,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -49,16 +49,13 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.Course_Name.computedValue"
+                  "key": "primaryColumns.Order_Number.computedValue"
                 },
                 {
-                  "key": "primaryColumns.Enrolled_In.computedValue"
+                  "key": "primaryColumns.Order_Total_Price.computedValue"
                 },
                 {
-                  "key": "primaryColumns.Price.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Section_ID.computedValue"
+                  "key": "primaryColumns.Order_date.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -96,22 +93,21 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681924802478,
-              "originalBottomRow": 41,
+              "columnUpdatedAt": 1681957629872,
+              "originalBottomRow": 63,
               "defaultSelectedRowIndices": [
                 0
               ],
               "widgetName": "Table2",
               "defaultPageSize": 0,
               "columnOrder": [
-                "Course_Name",
-                "Enrolled_In",
-                "Price",
-                "Section_ID"
+                "Order_Number",
+                "Order_Total_Price",
+                "Order_date"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 63,
+              "bottomRow": 41,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -123,16 +119,16 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "Course_Name": {
+                "Order_Number": {
                   "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "originalId": "Course Name",
-                  "id": "Course_Name",
-                  "alias": "Course Name",
+                  "originalId": "Order Number",
+                  "id": "Order_Number",
+                  "alias": "Order Number",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -144,21 +140,50 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Course Name",
+                  "label": "Order Number",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Course Name\"]))}}",
+                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Order Number\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "Enrolled_In": {
+                "Order_Total_Price": {
                   "allowCellWrapping": false,
                   "index": 1,
                   "width": 150,
-                  "originalId": "Enrolled In",
-                  "id": "Enrolled_In",
-                  "alias": "Enrolled In",
+                  "originalId": "Order Total Price",
+                  "id": "Order_Total_Price",
+                  "alias": "Order Total Price",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Order Total Price",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Order Total Price\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Order_date": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "Order date",
+                  "id": "Order_date",
+                  "alias": "Order date",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -173,68 +198,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Enrolled In",
+                  "label": "Order date",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Enrolled In\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Price": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "Price",
-                  "id": "Price",
-                  "alias": "Price",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Price",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Price\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Section_ID": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "Section ID",
-                  "id": "Section_ID",
-                  "alias": "Section ID",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Section ID",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Section ID\"]))}}",
+                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Order date\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -255,7 +222,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 13,
+              "originalTopRow": 35,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -295,7 +262,7 @@
               "text": "Welcome, \n",
               "key": "1aa54nq8zd",
               "isDeprecated": false,
-              "rightColumn": 8,
+              "rightColumn": 6,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "v8yb1mvpsb",
@@ -323,7 +290,7 @@
                 "label"
               ],
               "topRow": 2,
-              "bottomRow": 28,
+              "bottomRow": 6,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -332,7 +299,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 13.6875,
               "dynamicTriggerPathList": [],
-              "leftColumn": 8,
+              "leftColumn": 6,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -349,10 +316,10 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "{{Student_By_ID.data}}",
+              "text": "{{Student_By_ID.data[0][\"Student Name\"]}}",
               "key": "1aa54nq8zd",
               "isDeprecated": false,
-              "rightColumn": 24,
+              "rightColumn": 22,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "h6a19trg43",
@@ -368,7 +335,66 @@
               "originalTopRow": 2,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 6,
+              "originalBottomRow": 28,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "widgetName": "Text3",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 7,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 13.6875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "{{Student_By_ID.data[0][\"Student Email\"]}}",
+              "key": "1aa54nq8zd",
+              "isDeprecated": false,
+              "rightColumn": 18,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "ritx63xh61",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 2,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 28,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -396,6 +422,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "onSubmit"
+                },
+                {
+                  "key": "onTextChanged"
                 }
               ],
               "resetOnSubmit": true,
@@ -415,6 +444,7 @@
               "key": "j48mvuzsj3",
               "labelTextSize": "0.875rem",
               "isRequired": false,
+              "onTextChanged": "{{Student_By_ID.run(() => Enrollments.run(), () => {})}}",
               "isDeprecated": false,
               "rightColumn": 60,
               "dynamicHeight": "FIXED",
@@ -433,7 +463,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "",
+              "defaultText": "1",
               "minDynamicHeight": 4
             }
           ]
@@ -449,7 +479,9 @@
                 "Input1.text"
               ],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Page2_Student_By_ID",
               "name": "Student_By_ID",
