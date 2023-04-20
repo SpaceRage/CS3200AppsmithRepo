@@ -1,0 +1,7 @@
+{
+	"fname": {{Input2.text.split(" ")[0]}},
+	"lname": {{Input2.text.split(" ")[1]}},
+	"email": {{Input3.text}},
+	"phone": {{Input4.text}},
+	"ssn": {{Input5.text}}
+}
