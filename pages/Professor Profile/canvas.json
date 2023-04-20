@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 410,
           "containerStyle": "none",
           "snapRows": 65,
           "parentRowSpace": 1,
@@ -54,7 +54,7 @@
                   "key": "onTextChanged"
                 }
               ],
-              "resetOnSubmit": true,
+              "resetOnSubmit": false,
               "leftColumn": 39,
               "dynamicBindingPathList": [
                 {
@@ -66,12 +66,16 @@
               ],
               "labelPosition": "Top",
               "labelStyle": "",
-              "inputType": "TEXT",
+              "inputType": "NUMBER",
               "isDisabled": false,
               "key": "nqxxnlknvc",
               "labelTextSize": "0.875rem",
               "isRequired": false,
-              "onTextChanged": "{{Professors_ByID.run(() => storeValue('ProfessorID',Enter_Professor_ID.text), () => {})}}",
+
+
+
+              "onTextChanged": "{{storeValue('ProfessorID',Enter_Professor_ID.text)}}",
+
               "isDeprecated": false,
               "rightColumn": 59,
               "dynamicHeight": "FIXED",
@@ -491,6 +495,59 @@
               "rightColumn": 42,
               "isDefaultClickDisabled": true,
               "widgetId": "b27f8rdt7l",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "hug",
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "Button1",
+              "onClick": "{{Delete_Professor.run(() => Professors_ByID.run(), () => {})}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 37,
+              "bottomRow": 41,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 26,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Delete account",
+              "isDisabled": false,
+              "key": "bruwsovldy",
+              "isDeprecated": false,
+              "rightColumn": 42,
+              "isDefaultClickDisabled": true,
+              "widgetId": "f9oyxy9qdm",
               "minWidth": 120,
               "isVisible": true,
               "recaptchaType": "V3",
