@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Update_Professor_Information",
+    "name": "Delete_Professor",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -30,9 +30,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"fname\": \"{{Update_First_Name.text}}\",\n\t\"lname\": \"{{Update_Last_Name.text}}\",\n\t\"years_worked\": {{Update_Years_Worked.text}}\n}",
+      "body": "",
       "bodyFormData": [],
-      "httpMethod": "PUT",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -40,14 +40,11 @@
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
-      {
-        "key": "body"
-      },
       {
         "key": "datasourceUrl"
       }
@@ -56,9 +53,6 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Update_First_Name.text",
-      "Update_Last_Name.text",
-      "Update_Years_Worked.text",
       "appsmith.store.ProfessorID"
     ],
     "userSetOnLoad": false,
@@ -66,7 +60,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Professor Profile_Update_Professor_Information",
+  "id": "Professor Profile_Delete_Professor",
   "deleted": false,
-  "gitSyncId": "6440a3c0af6dfb389f95b05c_6440ae522f9f832e00531d90"
+  "gitSyncId": "6440bac32f9f832e00531deb_6440bca52f9f832e00531e02"
 }
