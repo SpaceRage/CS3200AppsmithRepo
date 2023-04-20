@@ -62,9 +62,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "defaultText"
                 }
               ],
               "labelPosition": "Top",
@@ -74,7 +71,7 @@
               "key": "nqxxnlknvc",
               "labelTextSize": "0.875rem",
               "isRequired": false,
-              "onTextChanged": "",
+              "onTextChanged": "{{Professors_ByID.run(() => storeValue('ProfessorID',Enter_Professor_ID.text), () => {})}}",
               "isDeprecated": false,
               "rightColumn": 59,
               "dynamicHeight": "FIXED",
@@ -93,7 +90,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "{{appsmith.store.ProfessorID}}",
+              "defaultText": "1",
               "minDynamicHeight": 4
             },
             {
