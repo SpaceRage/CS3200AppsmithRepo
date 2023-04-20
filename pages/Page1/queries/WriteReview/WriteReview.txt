@@ -1,0 +1,4 @@
+{
+	"review_content": {{ReviewContent.text}},
+	"review_rating": {{ReviewRating.value}}
+}

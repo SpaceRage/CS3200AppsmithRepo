@@ -27,24 +27,53 @@
           "children": [
             {
               "boxShadow": "none",
-              "widgetName": "Enter_Professor_ID",
-              "displayName": "Input",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "{{Professors_ByID.run(() => storeValue('ProfessorID',Enter_Professor_ID.text), () => {})}}",
+              "topRow": 6,
+              "labelWidth": 5,
+              "type": "INPUT_WIDGET_V2",
+              "animateLoading": true,
+              "resetOnSubmit": false,
+              "leftColumn": 39,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelStyle": "",
+              "inputType": "NUMBER",
+              "isDisabled": false,
+              "isRequired": false,
+              "dynamicHeight": "FIXED",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "isVisible": true,
+              "version": 2,
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "widgetName": "Enter_Professor_ID",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onTextChanged"
+                }
+              ],
+              "displayName": "Input",
               "searchTags": [
                 "form",
                 "text input",
                 "number",
                 "textarea"
               ],
-              "topRow": 6,
               "bottomRow": 13,
               "parentRowSpace": 10,
-              "labelWidth": 5,
               "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
               "hideCard": false,
-              "animateLoading": true,
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [
                 {
@@ -54,43 +83,22 @@
                   "key": "onTextChanged"
                 }
               ],
-              "resetOnSubmit": false,
-              "leftColumn": 39,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
               "labelPosition": "Top",
-              "labelStyle": "",
-              "inputType": "NUMBER",
-              "isDisabled": false,
               "key": "nqxxnlknvc",
               "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "onTextChanged": "{{storeValue('ProfessorID',Enter_Professor_ID.text)}}",
+              "onTextChanged": "{{storeValue('ProfessorID',Enter_Professor_ID.text);\nProfessors_ByID.run();}}",
               "isDeprecated": false,
               "rightColumn": 59,
-              "dynamicHeight": "FIXED",
               "widgetId": "jkhqb0bpme",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
               "minWidth": 450,
-              "isVisible": true,
               "label": "Please enter your Professor ID.",
-              "version": 2,
               "parentId": "0",
               "labelAlignment": "left",
               "renderMode": "CANVAS",
-              "isLoading": false,
               "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "1",
+              "defaultText": "{{appsmith.store.ProfessorID}}",
               "minDynamicHeight": 4
             },
             {
@@ -559,7 +567,20 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Professor Profile_Professors_ByID",
+              "name": "Professors_ByID",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.ProfessorID"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Professor Profile",
